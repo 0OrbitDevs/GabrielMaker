@@ -1763,17 +1763,33 @@ textarea, .contact-form button { grid-column: 1 / -1; }
   .testimonial-card { grid-template-columns: minmax(0, 1fr) 88px; }
   .testimonial-logo-slot { width: 88px; min-height: 88px; }
   .before-after-copy h2 { font-size: 38px; }
-  .comparison { min-height: 430px; }
-  .compare-panel { min-height: 430px; padding: 26px 22px 104px; }
+  .comparison { min-height: 350px; }
+  .compare-panel { min-height: 350px; padding: 22px 16px 76px; }
   .logo-placeholder { width: 100%; height: 118px; }
   .compare-description { max-width: 100%; font-size: 15px; line-height: 1.42; }
   .brand-system span { width: 48px; }
-  .compare-range { left: 22px; right: 22px; bottom: 34px; width: calc(100% - 44px); }
+  .compare-range { left: 16px; right: 16px; bottom: 24px; width: calc(100% - 32px); }
   .before-after-case { gap: 16px; }
   .before-after-case-copy { min-height: 0; }
   .before-after-case .comparison,
-  .before-after-case .compare-panel { min-height: 470px; }
-  .comparison-media { width: 100%; height: 250px; }
+  .before-after-case .compare-panel { min-height: 350px; }
+  .before-after-case .compare-panel { padding: 22px 16px 76px; }
+  .before-after-case .panel-label { margin-bottom: 12px; font-size: 22px; }
+  .comparison-media {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    padding: 6px;
+  }
+  .comparison-media img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain !important;
+    object-position: center;
+  }
   .cta-box { padding: 28px; gap: 28px; }
   .cta-project-panel { padding: 20px; }
   .cta-project-panel h3 { font-size: 22px; }
