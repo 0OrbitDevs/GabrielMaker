@@ -642,6 +642,73 @@ h3 { font-size: 24px; }
   box-shadow: 0 0 0 7px rgba(201,164,92,.18), 0 6px 18px rgba(0,0,0,.35);
 }
 
+.before-after-case {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 18px;
+  min-width: 0;
+}
+.before-after-case-copy {
+  min-height: 230px;
+  padding: 0 4px;
+}
+.before-after-case-copy .case-category {
+  margin: 0 0 10px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.before-after-case-copy h3 {
+  margin: 0;
+  color: var(--warm);
+  font-size: clamp(24px, 2.7vw, 34px);
+  line-height: 1.08;
+}
+.before-after-case-copy .case-summary {
+  margin: 14px 0 0;
+  color: rgba(255,253,248,.72);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.before-after-case .comparison,
+.before-after-case .compare-panel {
+  min-height: 440px;
+}
+.before-after-case .compare-panel {
+  padding-bottom: 86px;
+}
+.before-after-case .panel-label {
+  margin-bottom: 18px;
+  font-size: clamp(20px, 2.4vw, 30px);
+}
+.comparison-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 260px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #000;
+  background: #f7f5f1;
+  box-shadow: 0 18px 44px rgba(17,17,17,.18);
+}
+.comparison-media-dark {
+  padding: 8px;
+  background: #001d16;
+}
+.comparison-media-light {
+  background: #f7f3ed;
+}
+.comparison-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .service-grid { grid-template-columns: repeat(3, 1fr); }
 .service-card {
   padding: 28px;
@@ -1609,6 +1676,10 @@ textarea, .contact-form button { grid-column: 1 / -1; }
   .before-after-grid { gap: 34px; }
   .comparison { min-height: 380px; }
   .compare-panel { min-height: 380px; }
+  .before-after-case-copy { min-height: 270px; }
+  .before-after-case .comparison,
+  .before-after-case .compare-panel { min-height: 460px; }
+  .before-after-case .compare-panel { padding-left: 24px; padding-right: 24px; }
   .testimonial-card { grid-template-columns: minmax(0, 1fr) 104px; }
   .testimonial-logo-slot { width: 104px; min-height: 104px; }
 }
@@ -1698,6 +1769,11 @@ textarea, .contact-form button { grid-column: 1 / -1; }
   .compare-description { max-width: 100%; font-size: 15px; line-height: 1.42; }
   .brand-system span { width: 48px; }
   .compare-range { left: 22px; right: 22px; bottom: 34px; width: calc(100% - 44px); }
+  .before-after-case { gap: 16px; }
+  .before-after-case-copy { min-height: 0; }
+  .before-after-case .comparison,
+  .before-after-case .compare-panel { min-height: 470px; }
+  .comparison-media { width: 100%; height: 250px; }
   .cta-box { padding: 28px; gap: 28px; }
   .cta-project-panel { padding: 20px; }
   .cta-project-panel h3 { font-size: 22px; }
