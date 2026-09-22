@@ -798,6 +798,20 @@ h3 { font-size: 24px; }
   color: var(--graphite);
   overflow: hidden;
 }
+.project-mockup-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.project-card.cafe .project-mockup-image.agroeng-project { background: #020D06; }
+.project-card.bella .project-mockup-image.dayane-project { background: #EEE9E2; }
+.project-mockup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .project-mockup strong { font: 800 68px "Space Grotesk"; }
 .project-mockup span { align-self: end; font-weight: 850; }
 .cafe .project-mockup { background: linear-gradient(135deg,#f3e4cf,#7A1E2C); }
